@@ -7,9 +7,17 @@ public class Main {
         double f = 98.6;
         double c = fahrenheitToCelsius(f);
         System.out.println(f + "°F = " + c + "°C");
+
+        c = 37.0;
+        f = celsiusToFahrenheit(c);
+        System.out.println(c + "°C = " + f + "°F");
     }
 
     public static double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit - 32) * 5 / 9;
+    }
+
+    public static double celsiusToFahrenheit(double celsius) {
+        return (celsius * 9 / 5) + 32;
     }
 }
